@@ -57,7 +57,7 @@ function Header() {
     
         <AppBar position="fixed">
           <ToolbarStyled>
-            <Link to="/imdb">
+            <Link to="/">
                 <Logo src={LOGO_IMDB} />
             </Link>
             <BasicMenu/>
