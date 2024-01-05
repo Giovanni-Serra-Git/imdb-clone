@@ -14,7 +14,7 @@ import Movie from './pages/movies';
 
 const router = createBrowserRouter([
     {
-      path: "/imdb",
+      path: "imdb-clone-website/imdb",
       element: <App />,
       errorElement: <ErrorPage />
     },
