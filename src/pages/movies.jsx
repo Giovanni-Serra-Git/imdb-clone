@@ -123,7 +123,7 @@ function Movie() {
                                 <FormatQuoteIcon />
                                 </>) : ""}
                             </Typography>
-                            <Box sx={{display: "flex", gap: "10px", justifyContent: "center", marginBlock: "1rem", flexWrap: "wrap"}}>
+                            <Box sx={{display: "flex", gap: "10px", justifyContent: "center", marginBlock: "1rem", flexWrap: "wrap", border: "1px solid red"}}>
                             {genres ? genres.map(genre => {
                                 return <Typography 
                                     variant="h5"
