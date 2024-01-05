@@ -19,7 +19,7 @@ const router = createBrowserRouter([
       errorElement: <ErrorPage />
     },
     {
-      path: "/imdb/movie/:id",
+      path: "/movie/:id",
       element: <Movie />,
     }
   ]);
