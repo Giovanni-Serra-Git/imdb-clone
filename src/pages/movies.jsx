@@ -20,7 +20,7 @@ const WrapperMovieDetails = styled(Box)(({ theme }) => ({
         flexDirection: "column",
         marginBlock: "none",
         border: "1px solid black",
-    }
+    } 
   }));
 
 // const PosterImageWrapper = styled(Box)`
@@ -123,7 +123,7 @@ function Movie() {
                                 <FormatQuoteIcon />
                                 </>) : ""}
                             </Typography>
-                            <Box sx={{display: "flex", gap: "10px", justifyContent: "center", marginBlock: "1rem"}}>
+                            <Box sx={{display: "flex", gap: "10px", justifyContent: "center", marginBlock: "1rem, flex-wrap: wrap"}}>
                             {genres ? genres.map(genre => {
                                 return <Typography 
                                     variant="h5"
