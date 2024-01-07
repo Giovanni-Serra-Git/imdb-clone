@@ -69,3 +69,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # Imdb
+
+A simple Web Application I built with React, Material UI, Styled Components, React Router and React Redux.
+the approach of building this app differed completely from my previous raw code experience.
+I had to deal with endpoints, and specially I had to understand how to use Material UI.
+I built this little project in order to apply the basics I learned from Material UI and the other technologies.
+I also used React-Multi-Carousel from NPM in order to use something new I never tried before and experiment with.
+It was extremely useful since I saved a lot of time instead of building something from scratch.
