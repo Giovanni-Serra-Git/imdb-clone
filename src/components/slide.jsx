@@ -7,6 +7,7 @@ import { useGetPopularMoviesQuery } from "../services/apiSlice";
 import { DEFAULT_IMG_PATH, YELLOW } from "../costants/costants";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Spinner from "./spinner";
 
 
 
@@ -45,14 +46,20 @@ const TitleMovies = styled(Typography)(({ theme }) => ({
     },    
   }));
 
-
+  const BoxSpinner = styled(Box)`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
 
 function Slide({requestMovie, movieGenre}) {
-    const {data : {results : moviesList} = {}, isSuccess, error} = requestMovie();
+    const {data : {results : moviesList} = {}, isSuccess, error, isLoading} = requestMovie();
     const [id, setId] = useState("");
-    return (
+    return  <>
         <Box style={{width: "80%", marginInline: "auto", color: "#fff" }}>
             <TitleMovies variant="h3" sx={{mb: "1rem"}}>{movieGenre} Movies</TitleMovies>
+            {isLoading ? <BoxSpinner><Spinner/></BoxSpinner> : 
         <StyledCarousel
          swipeable={false}
          draggable={false}
@@ -80,9 +87,9 @@ function Slide({requestMovie, movieGenre}) {
                </>
              }) : []
            }
-      </StyledCarousel>
+      </StyledCarousel>}
      </Box>
-    )
+    </>
 }
 
 export default Slide
